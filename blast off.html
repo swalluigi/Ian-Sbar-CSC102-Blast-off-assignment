@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<!--Ian Sbar-->
+
+<head>
+
+    <title>Ian Sbar's CSC102 Blast Off</title>
+    <!--this changes backround color-->
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="UATspaceLogo-1.jpg">
+    <h1>
+        UAT Space Program
+    </h1>
+    <script>
+        document.write("Click the start button to start the coundown.");
+    </script>
+
+    <button onclick="startTimer();">
+        start
+    </button>
+
+    <button>
+        stop
+
+    </button>
+    <br>
+    <br>
+    <p id="countdownTimer">Starting Countdown...</p>
+    <script>
+        var img = document.createElement("img");
+        img.src = "Sequence-_1.gif";
+        var currtime = 50;
+        var sec = 0
+        function startTimer() {
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+            }, sec);
+
+            sec = sec + 5000
+
+            document.getElementById("countdownTimer").innerHTML = currtime;
+            setTimeout(function () {
+                currtime = currtime - 5;
+                document.getElementById("countdownTimer").innerHTML = currtime;
+                setTimeout(function()
+                    {alert ("Blast Off!");}, 1); //this time out function is used to make sure the timer VISUALLY displays zero when the blast off alert pops up. normally, it pops up just before 5 switches to 0
+                document.body.appendChild(img);
+                
+                
+            }, sec);
+
+            
+
+
+        }
+        
+
+    </script>
+    >
+</body>
+
+</html>
